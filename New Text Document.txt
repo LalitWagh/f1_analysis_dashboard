@@ -1,0 +1,25 @@
+f1_analysis_dashboard/
+├── main.py                     # Main execution script (handles args, orchestrates)
+├── config.py                   # Configuration settings
+├── requirements.txt            # Project dependencies
+├── output/                     # Directory for generated plots (will be created)
+│   └── README.md               # Explanation of output files
+├── src/                        # Source code modules
+│   ├── __init__.py
+│   ├── data_loader.py          # Handles FastF1 session loading & caching
+│   ├── analysis/
+│   │   ├── __init__.py
+│   │   ├── lap_analysis.py     # Fastest lap functions
+│   │   ├── pace_analysis.py    # Pace comparison functions
+│   │   └── results_analysis.py # Official results processing
+│   ├── plotting/
+│   │   ├── __init__.py
+│   │   └── plot_generator.py   # Functions to create and save plots
+│   └── utils/
+│       ├── __init__.py
+│       ├── formatting.py       # Time formatting utilities
+│       └── helpers.py          # Other common helper functions (e.g., team mapping)
+└── tests/                      # Unit tests
+    ├── __init__.py
+    ├── test_utils.py           # Tests for utility functions
+    └── test_analysis_logic.py  # Tests for analysis logic (using mock data)
